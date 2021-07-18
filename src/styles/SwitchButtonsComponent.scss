@@ -1,0 +1,19 @@
+.buttonsContainer {
+  grid-column: 1/4;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px;
+}
+.button {
+  cursor: pointer;
+}
+
+.selectField {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.selectContainer {
+  display: flex;
+  justify-content: center;
+}

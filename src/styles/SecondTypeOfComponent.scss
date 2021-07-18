@@ -1,0 +1,65 @@
+.secondTypeOfComponentMain {
+  overflow: hidden;
+  height: 100%;
+}
+
+.componentContent {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 20;
+  padding: 8px;
+}
+.secondTypeOfCategory {
+  text-align: left;
+  background-color: rgb(255, 120, 0);
+  color: white;
+  padding: 4px;
+  font-size: 0.5rem;
+  width: min-content;
+}
+.secondTypeOfTitleInner {
+  color: white;
+  padding: 4px;
+  font-weight: 700;
+}
+
+.secondTypeOfTitleOuter {
+  color: black;
+  padding: 4px;
+  font-weight: 700;
+}
+
+.secondTypeContentContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .twoColumnComponent {
+    grid-column: auto / span 2;
+  }
+
+  .pictureToDisplay {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+  }
+  .twoColumnComponent .secondTypeOfComponentMain .pictureToDisplay,
+  .threeColumnComponent .secondTypeOfComponentMain .pictureToDisplay {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1262px) {
+  .threeColumnComponent {
+    grid-column: auto / span 3;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1262px) {
+  .threeColumnComponent {
+    grid-column: auto / span 2;
+  }
+}

@@ -1,0 +1,30 @@
+.advertisement {
+  border: 1px solid black;
+  max-height: 800px;
+}
+
+.advertisement img {
+  width: 100%;
+  max-height: 456px;
+}
+
+@media (min-width: 1422px) {
+  .advertisement {
+    grid-row: auto / span 2;
+    grid-column: auto / span 1;
+  }
+}
+
+@media (min-width: 1262px) and (max-width: 1421px) {
+  .advertisement {
+    grid-row: auto / span 1;
+    grid-column: auto / span 3;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1261px) {
+  .advertisement {
+    grid-row: auto / span 1;
+    grid-column: auto / span 2;
+  }
+}
